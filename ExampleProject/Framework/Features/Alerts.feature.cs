@@ -22,28 +22,12 @@ namespace ExampleProject.Framework.Features
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Alerts")]
     [NUnit.Framework.FixtureLifeCycleAttribute(NUnit.Framework.LifeCycle.InstancePerTestCase)]
-    [NUnit.Framework.CategoryAttribute("allure.suite:LoginSuite")]
-    [NUnit.Framework.CategoryAttribute("allure.subSuite:PositiveTests")]
-    [NUnit.Framework.CategoryAttribute("allure.owner:maksim")]
-    [NUnit.Framework.CategoryAttribute("allure.severity:critical")]
-    [NUnit.Framework.CategoryAttribute("allure.tag:api")]
-    [NUnit.Framework.CategoryAttribute("allure.issue:BUG-123")]
-    [NUnit.Framework.CategoryAttribute("allure.tms:TMS-456")]
-    [NUnit.Framework.CategoryAttribute("allure.label.epic:WebInterface")]
     public partial class AlertsFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
-        private static string[] featureTags = new string[] {
-                "allure.suite:LoginSuite",
-                "allure.subSuite:PositiveTests",
-                "allure.owner:maksim",
-                "allure.severity:critical",
-                "allure.tag:api",
-                "allure.issue:BUG-123",
-                "allure.tms:TMS-456",
-                "allure.label.epic:WebInterface"};
+        private static string[] featureTags = ((string[])(null));
         
         private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Framework/Features", "Alerts", "\tI am user \r\n\tI want to handle a alert\r\n\tTo be able to accept is", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
@@ -100,14 +84,12 @@ namespace ExampleProject.Framework.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Alert handing")]
-        [NUnit.Framework.CategoryAttribute("allure.label.story:CreateLabels")]
         public async System.Threading.Tasks.Task AlertHanding()
         {
-            string[] tagsOfScenario = new string[] {
-                    "allure.label.story:CreateLabels"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Alert handing", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+#line 7
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -117,16 +99,16 @@ namespace ExampleProject.Framework.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 16
+#line 8
  await testRunner.GivenAsync("I go to \'JavaScript Alerts\' on the Main Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 17
+#line 9
  await testRunner.WhenAsync("I generate JS alert on the JavaScript Alert Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 10
  await testRunner.AndAsync("I accept the alert", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 19
+#line 11
  await testRunner.ThenAsync("Success message is displayed on JavaScript Alert Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }

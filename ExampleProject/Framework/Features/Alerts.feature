@@ -1,5 +1,4 @@
-﻿
-Feature: Alerts 
+﻿Feature: Alerts 
 	I am user 
 	I want to handle a alert
 	To be able to accept is

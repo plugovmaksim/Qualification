@@ -13,7 +13,6 @@ namespace ExampleProject.Framework.StepDefinitions
         [When(@"I generate JS alert on the JavaScript Alert Page")]
         public void GenerateJSAlertOnTheJavascriptAlertPage()
         {
-            AllureApi.Step("Click JS Alert Button");
             jsAlertPage.ClickJSAlertBtn();
         }
 
