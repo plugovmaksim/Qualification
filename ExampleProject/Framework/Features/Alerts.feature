@@ -1,4 +1,11 @@
-﻿@allure.label.epic:WebInterface
+﻿@allure.suite:LoginSuite
+@allure.subSuite:PositiveTests
+@allure.owner:maksim
+@allure.severity:critical
+@allure.tag:api
+@allure.issue:BUG-123
+@allure.tms:TMS-456
+@allure.label.epic:WebInterface
 Feature: Alerts 
 	I am user 
 	I want to handle a alert
