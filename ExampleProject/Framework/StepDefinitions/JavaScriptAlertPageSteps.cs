@@ -1,4 +1,5 @@
-﻿using ExampleProject.Framework.Pages;
+﻿using Allure.Net.Commons;
+using ExampleProject.Framework.Pages;
 using NUnit.Framework;
 using Reqnroll;
 
@@ -12,6 +13,7 @@ namespace ExampleProject.Framework.StepDefinitions
         [When(@"I generate JS alert on the JavaScript Alert Page")]
         public void GenerateJSAlertOnTheJavascriptAlertPage()
         {
+            AllureApi.Step("Click JS Alert Button");
             jsAlertPage.ClickJSAlertBtn();
         }
 
